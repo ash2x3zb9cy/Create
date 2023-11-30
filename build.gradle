@@ -13,7 +13,7 @@ plugins {
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
-String runNumber = System.getenv("GITHUB_RUN_NUMBER")
+String runNumber = "1161"
 String build = runNumber != null ? "build.$runNumber" : "local"
 version = "$mod_version-$build+mc$minecraft_version"
 
